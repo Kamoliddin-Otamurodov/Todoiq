@@ -1,7 +1,7 @@
 ```markdown
-# TaskManager API
+# Todoiq API
 
-The TaskManager API allows you to manage tasks and todos efficiently. This documentation provides an overview of the API endpoints, authentication, and usage examples.
+The Todoiq API allows you to manage tasks and todos efficiently. This documentation provides an overview of the API endpoints, authentication, and usage examples.
 
 ## Table of Contents
 
@@ -17,16 +17,18 @@ The TaskManager API allows you to manage tasks and todos efficiently. This docum
 
 ## Getting Started
 
-To get started with the TaskManager API, follow these steps:
+To get started with the Todoiq API, follow these steps:
 
 1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Set up your database and configure the environment variables.
-4. Run the server using `npm start`.
+2. Install dependencies using `pip install -r requirements`.
+3. Create virtual environment `python -m venv venv`.
+3. Activate virtual environment `source venv/Scripts/activate`  # On Mac or Linux use `venv\bin\activate`
+4. Migrate the database using `python manage.py migrate`.
+4. Run the server using `python manage.py runserver`.
 
 ### Authentication
 
-The API uses JSON Web Tokens (JWT) for authentication. Obtain a token by sending a POST request to `/api/auth/login` with your username and password.
+The API uses  POST request to `/api/v1/users/login` with your username and password.
 
 **Example:**
 
@@ -106,7 +108,7 @@ Get the priority of a specific task.
 
 ## Example Usage
 
-Here are some examples of using the TaskManager API:
+Here are some examples of using the Todoiq API:
 
 - Register a new user:
   ```bash

@@ -66,4 +66,4 @@ Explore the [Todoiq REST API Documentation](api-docs.md) for comprehensive detai
 
 ## Database Design
 
-![db-design](image.png)
+![db-design](Todoiq-database-design.jpg)
